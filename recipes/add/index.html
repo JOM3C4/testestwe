@@ -58,19 +58,25 @@
         <select id="recipe-category" oninput="previewRecipeCategory()" required>
           <option value="" disabled selected>Select a category</option>
         </select>
-        <select id="recipe-ingredients" required>
-          <option value="" disabled selected>Select a ingredient</option>
-        </select>
+        <div id="ingredients-section">
+          <h4>Ingredients</h4>
+          <div class="ingredient-row">
+            <select class="ingredient-select" required>
+              <option value="" disabled selected>Select ingredient</option>
+            </select>
+            <input type="number" class="ingredient-quantity" placeholder="Quantity" min="0" required />
+            <input type="text" class="ingredient-unit" placeholder="Unit (e.g. g, ml)" />
+            <button type="button" class="remove-ingredient" style="display:none">Remove</button>
+          </div>
+        </div>
+        <button id="add-ingredient" type="button">Add ingredient</button>
         <textarea
           id="recipe-instructions"
           oninput="previewRecipeInstructions()"
-          placeholder="Enter inscrutions, one step per line!"
+          placeholder="Enter instructions, one step per line!"
           required
         ></textarea>
-
-        <form>
-          <button id="add-ingredient" type="button">Add ingredient</button>
-        </form>
+        <button type="submit">Save Recipe</button>
       </form>
 
       <a-side id="recipe-preview">

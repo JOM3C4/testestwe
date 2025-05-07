@@ -1,6 +1,6 @@
 async function getRecipes(limit) {
-    const url = "http://localhost:5001/api/v1/recipes";
-    // const url = "https://express-api-jbkl.onrender.com/api/v1/recipes";
+    // const url = "http://localhost:5001/api/v1/recipes";
+    const url = "https://express-api-jbkl.onrender.com/api/v1/recipes";
     try {
       const response = await fetch(url);
       if (!response.ok) {
