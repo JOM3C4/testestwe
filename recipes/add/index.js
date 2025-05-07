@@ -19,7 +19,6 @@ function previewRecipeCategory() {
 }
 
 
-
 async function getCategories() {
     const url = "http://localhost:5001/api/v1/categories";
     // const url = "https://express-api-jbkl.onrender.com/api/v1/categories";
