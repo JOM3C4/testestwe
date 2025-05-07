@@ -55,17 +55,30 @@
           placeholder="Enter title"
           required
         />
-
-        <select id="recipe-category" required>
+        <select id="recipe-category" oninput="previewRecipeCategory()" required>
           <option value="" disabled selected>Select a category</option>
         </select>
+        <select id="recipe-ingredients" required>
+          <option value="" disabled selected>Select a ingredient</option>
+        </select>
+        <textarea
+          id="recipe-instructions"
+          oninput="previewRecipeInstructions()"
+          placeholder="Enter inscrutions, one step per line!"
+          required
+        ></textarea>
+
+        <form>
+          <button id="add-ingredient" type="button">Add ingredient</button>
+        </form>
       </form>
 
       <a-side id="recipe-preview">
         <h2 id="">Recipe Preview</h2>
-        <img id="preview-recipe-image" />
+        <img id="recipe-image-preview" />
         <div class="recipe-desc">
           <div class="recipe-ingredients-container">
+            <h3 id="recipe-category-preview"></h3>
             <!-- <h3 class="ingredients-title">Ingredients</h3> -->
             <ul id="recipe-ingredients-preview"></ul>
           </div>
@@ -77,6 +90,6 @@
       </a-side>
     </div>
 
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
   </body>
 </html>
