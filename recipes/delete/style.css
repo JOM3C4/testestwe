@@ -1,0 +1,9 @@
+.delete-recipe-button {
+    width: 50%;
+    background-color: #B85C5A !important;
+    transition: background-color 0.3s ease !important;
+    &:hover {
+        background-color: #b06e54 !important;
+    }
+}
+

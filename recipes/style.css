@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: "Playfair Display", serif;
+    background-color: #faf3ed;
+    box-sizing: border-box;
+}
+
+#recipe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#recipe-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.recipe-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.recipe-ingredients-container {
+    flex: 0.5;
+}
+
+.ingredients-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #3b3028;
+    padding-left: 1rem;
+    margin-top: 1.675rem;
+    line-height: 40px;
+}
+
+#recipe-ingredients {
+    padding-left: 1rem;
+}
+
+.recipe-ingredient-item {
+    line-height: 1.8rem;
+}
+
+.recipe-info {
+    flex: 2;
+}
+
+#recipe-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #3b3028;
+}
+
+#recipe-instructions {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #0a0908;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+    .recipe-desc {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}

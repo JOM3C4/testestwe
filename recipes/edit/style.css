@@ -1,0 +1,10 @@
+.edit-recipe-button{
+    background-color: #76a28d;
+    width: 12rem;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #5d8a7a;
+    }
+    
+    
+}

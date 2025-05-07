@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/reset.css" />
+    <link rel="stylesheet" href="../../style/normalize.css" />
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Add recipes</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <div class="btn">
+          <li>
+            <button id="show-recipes">
+              <a href="../../index.html">All recipes</a>
+            </button>
+          </li>
+          <li>
+            <button id="add-recipes">
+              <a href="./index.html">Add recipe</a>
+            </button>
+          </li>
+          <li>
+            <button id="edit-recipes">
+              <a href="../edit/index.html">Edit recipe</a>
+            </button>
+          </li>
+          <li>
+            <button id="delete-recipes">
+              <a href="../delete/index.html">Delete recipes</a>
+            </button>
+          </li>
+        </div>
+      </ul>
+    </header>
+
+    <h1 id="main-title">Add Recipe</h1>
+
+    <div id="recipe-container">
+      <form id="recipe-form">
+        <input
+          id="recipe-image"
+          oninput="previewRecipeImage()"
+          type="text"
+          placeholder="Enter image address"
+          required
+        />
+        <input
+          id="recipe-title"
+          oninput="previewRecipeTitle()"
+          type="text"
+          placeholder="Enter title"
+          required
+        />
+      </form>
+
+      <a-side id="recipe-preview">
+        <h2 id="">Recipe Preview</h2>
+        <img id="recipe-image-preview" />
+        <div class="recipe-desc">
+          <div class="recipe-ingredients-container">
+            <!-- <h3 class="ingredients-title">Ingredients</h3> -->
+            <ul id="recipe-ingredients-preview"></ul>
+          </div>
+          <div class="recipe-info">
+            <h3 id="recipe-title-preview"></h3>
+            <p id="recipe-instructions-preview"></p>
+          </div>
+        </div>
+      </a-side>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

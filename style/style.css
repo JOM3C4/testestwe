@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: #faf3ed;
+    margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
+}
+
+#recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5ece4;
+    border: 1px solid #e5dcd4;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 20rem;
+    height: 30rem;
+
+    .recipe-image {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+
+        border-radius: 5px;
+    }
+    .recipe-desc-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+        width: 100%;
+
+        .recipe-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #3b3028;
+            text-align: center;
+
+            display: -webkit-box;
+            -webkit-line-clamp: 1; /* Max 2 lines */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    }
+    button {
+        width: 50%;
+    }
+}
+
+button {
+    background-color: #c97c5d;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: 0;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #b06e54;
+    }
+
+}
+#show-more {
+    margin: 1.5rem 0;
+    background-color: #9f513f;
+    width: 12rem;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #c97c5d;
+    }
+}
+
+
+.edit-recipe-button{
+    background-color: #6c9a8b;
+    width: 12rem;
+    transition: background-color 0.3s ease;
+    /* &:hover {
+        background-color: #5d8a7a;
+    } */
+    
+    
+}
+
+#main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3b3028;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+ #delete-recipes {
+    background-color: #B85C5A;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #b06e54;
+    }
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    
+}
+
